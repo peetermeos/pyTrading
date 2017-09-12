@@ -8,6 +8,14 @@ import time
 import os.path
 import logging
 
+'''
+Logger class for TWS logging
+@author: Peeter Meos
+'''
+class Logger():
+    def log(self, s):
+        print(s)
+
 def SetupLogger():
     if not os.path.exists("log"):
         os.makedirs("log")
